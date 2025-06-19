@@ -1,2 +1,2 @@
 # DiffAtlas
-DiffAtlas: GenAI-fying Atlas Segmentation via Image-Mask Diffusion
+DiffAtlas: GenAI-fying Atlas Segmentation via Image-Mask Diffusion (MICCAI 2025)
