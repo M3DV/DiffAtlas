@@ -153,14 +153,7 @@ The training scripts are all stored in the `training_scripts` folder, and the sp
 
 ## 🎯 Evaluation
 
-All the testing scripts are stored in the `testing_scripts` folder. You can use them to test the training results.
-
-If you need to obtain the pretrained weights, please perform the following steps first :
-
-```
-mkdir -p Model
-cd Model 
-```
+We have provided pre-trained model weights under different training settings, which you can obtain from [HuggingFace🤗](https://huggingface.co/YuheLiuu/DiffAtlas_Pretrained_model). All the testing scripts are stored in the `testing_scripts` folder. You can use them to test the training results.
 
 **Note:** If you want to perform inference with your own trained results, please modify the `model_num` parameter in the script to the specified weights and skip the steps below for downloading the pretrained weights.
 
@@ -169,6 +162,8 @@ cd Model
   get pretrained model :
 
   ```
+  mkdir -p Model
+  cd Model
   mkdir -p DiffAtlas_MMWHS-CT_full
   cd DiffAtlas_MMWHS-CT_full
   wget -o pretrained_MMWHSCT_full https://huggingface.co/YuheLiuu/DiffAtlas_Pretrained_model/resolve/main/MMWHSCT_full.pt
@@ -187,6 +182,8 @@ cd Model
   get pretrained model :
 
   ```
+  mkdir -p Model
+  cd Model
   mkdir -p DiffAtlas_MMWHS-CT_all
   cd DiffAtlas_MMWHS-CT_all
   wget -o pretrained_MMWHSCT_all https://huggingface.co/YuheLiuu/DiffAtlas_Pretrained_model/resolve/main/MMWHSCT_all.pt
@@ -205,6 +202,8 @@ cd Model
   get pretrained model :
 
   ```
+  mkdir -p Model
+  cd Model
   mkdir -p DiffAtlas_MMWHS-MRI_full
   cd DiffAtlas_MMWHS-MRI_full
   wget -o pretrained_MMWHSMRI_full https://huggingface.co/YuheLiuu/DiffAtlas_Pretrained_model/resolve/main/MMWHSMRI_full.pt
@@ -223,6 +222,8 @@ cd Model
   get pretrained model :
 
   ```
+  mkdir -p Model
+  cd Model
   mkdir -p DiffAtlas_MMWHS-MRI_all
   cd DiffAtlas_MMWHS-MRI_all
   wget -o pretrained_MMWHSMRI_all https://huggingface.co/YuheLiuu/DiffAtlas_Pretrained_model/resolve/main/MMWHSMRI_all.pt
@@ -241,6 +242,8 @@ cd Model
   get pretrained model :
 
   ```
+  mkdir -p Model
+  cd Model
   mkdir -p DiffAtlas_TotalSegmentator
   cd DiffAtlas_TotalSegmentator
   wget -o pretrained_TotalSegmentator_for_TotalSegmentatorTest https://huggingface.co/YuheLiuu/DiffAtlas_Pretrained_model/resolve/main/TotalSegmentator_for_TotalSegmentatorTest .pt
@@ -259,6 +262,8 @@ cd Model
   get pretrained model :
 
   ```
+  mkdir -p Model
+  cd Model
   mkdir -p DiffAtlas_TotalSegmentator
   cd DiffAtlas_TotalSegmentator
   wget -o pretrained_TotalSegmentator_for_MMWHSMRITest https://huggingface.co/YuheLiuu/DiffAtlas_Pretrained_model/resolve/main/TotalSegmentator_for_MMWHSMRITest.pt
@@ -305,5 +310,6 @@ If you found this repository useful, please cite the following.
       url={https://arxiv.org/abs/2503.06748}, 
 }
 ```
+
 
 
