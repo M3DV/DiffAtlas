@@ -119,6 +119,7 @@ The training scripts are all stored in the `training_scripts` folder, and the sp
 - Train on all training data of MMWHS-CT
 
   ```
+  cd DiffAtlas
   chmod +X ./traing_scripts/train_MMWHSCT_full_training_set.sh
   ./traing_scripts/train_MMWHSCT_full_training_set.sh
   ```
@@ -126,6 +127,7 @@ The training scripts are all stored in the `training_scripts` folder, and the sp
 - Train on all data of MMWHS-CT
 
   ```
+  cd DiffAtlas
   chmod +X ./traing_scripts/train_MMWHSCT_all.sh
   ./traing_scripts/train_MMWHSCT_full_all.sh
   ```
@@ -133,6 +135,7 @@ The training scripts are all stored in the `training_scripts` folder, and the sp
 - Train on all training data of MMWHS-MRI
 
   ```
+  cd DiffAtlas
   chmod +X ./traing_scripts/train_MMWHSMRI_full_training_set.sh
   ./traing_scripts/train_MMWHSMRI_full_training_set.sh
   ```
@@ -140,6 +143,7 @@ The training scripts are all stored in the `training_scripts` folder, and the sp
 - Train on all data of MMWHS-MRI
 
   ```
+  cd DiffAtlas
   chmod +X ./traing_scripts/train_MMWHSMRI_all.sh
   ./traing_scripts/train_MMWHSMRI_full_all.sh
   ```
@@ -147,6 +151,7 @@ The training scripts are all stored in the `training_scripts` folder, and the sp
 - Train on all training data of TotalSegmentator
 
   ```
+  cd DiffAtlas
   chmod +X ./traing_scripts/train_TotalSegmentator.sh
   ./traing_scripts/train_TotalSegmentator.sh
   ```
@@ -162,17 +167,18 @@ We have provided pre-trained model weights under different training settings, wh
   get pretrained model :
 
   ```
+  cd DiffAtlas
   mkdir -p Model
   cd Model
   mkdir -p DiffAtlas_MMWHS-CT_full
   cd DiffAtlas_MMWHS-CT_full
   wget -o pretrained_MMWHSCT_full https://huggingface.co/YuheLiuu/DiffAtlas_Pretrained_model/resolve/main/MMWHSCT_full.pt
-  cd ../..
   ```
 
   start inference :
 
   ```
+  cd DiffAtlas
   chmod +x ./testing_scripts/test_MMWHSCT_testing_set
   ./testing_scripts/test_MMWHSCT_all_testing_set
   ```
@@ -182,17 +188,18 @@ We have provided pre-trained model weights under different training settings, wh
   get pretrained model :
 
   ```
+  cd DiffAtlas
   mkdir -p Model
   cd Model
   mkdir -p DiffAtlas_MMWHS-CT_all
   cd DiffAtlas_MMWHS-CT_all
   wget -o pretrained_MMWHSCT_all https://huggingface.co/YuheLiuu/DiffAtlas_Pretrained_model/resolve/main/MMWHSCT_all.pt
-  cd ../..
   ```
 
   start inference :
 
   ```
+  cd DiffAtlas
   chmod +x ./testing_scripts/test_MMWHSMRI_all
   ./testing_scripts/test_MMWHSMRI_all
   ```
@@ -202,17 +209,18 @@ We have provided pre-trained model weights under different training settings, wh
   get pretrained model :
 
   ```
+  cd DiffAtlas
   mkdir -p Model
   cd Model
   mkdir -p DiffAtlas_MMWHS-MRI_full
   cd DiffAtlas_MMWHS-MRI_full
   wget -o pretrained_MMWHSMRI_full https://huggingface.co/YuheLiuu/DiffAtlas_Pretrained_model/resolve/main/MMWHSMRI_full.pt
-  cd ../..
   ```
 
   start inference :
 
   ```
+  cd DiffAtlas
   chmod +x ./testing_scripts/test_MMWHSMRI_testing_set
   ./testing_scripts/test_MMWHSMRI_all_testing_set
   ```
@@ -222,17 +230,18 @@ We have provided pre-trained model weights under different training settings, wh
   get pretrained model :
 
   ```
+  cd DiffAtlas
   mkdir -p Model
   cd Model
   mkdir -p DiffAtlas_MMWHS-MRI_all
   cd DiffAtlas_MMWHS-MRI_all
   wget -o pretrained_MMWHSMRI_all https://huggingface.co/YuheLiuu/DiffAtlas_Pretrained_model/resolve/main/MMWHSMRI_all.pt
-  cd ../..
   ```
 
   start inference :
 
   ```
+  cd DiffAtlas
   chmod +x ./testing_scripts/test_MMWHSCT_all
   ./testing_scripts/test_MMWHSCT_all
   ```
@@ -242,17 +251,18 @@ We have provided pre-trained model weights under different training settings, wh
   get pretrained model :
 
   ```
+  cd DiffAtlas
   mkdir -p Model
   cd Model
   mkdir -p DiffAtlas_TotalSegmentator
   cd DiffAtlas_TotalSegmentator
   wget -o pretrained_TotalSegmentator_for_TotalSegmentatorTest https://huggingface.co/YuheLiuu/DiffAtlas_Pretrained_model/resolve/main/TotalSegmentator_for_TotalSegmentatorTest .pt
-  cd ../..
   ```
 
   start inference :
 
   ```
+  cd DiffAtlas
   chmod +x ./testing_scripts/test_TotalSegmentator
   ./testing_scripts/test_TotalSegmentator
   ```
@@ -262,17 +272,18 @@ We have provided pre-trained model weights under different training settings, wh
   get pretrained model :
 
   ```
+  cd DiffAtlas
   mkdir -p Model
   cd Model
   mkdir -p DiffAtlas_TotalSegmentator
   cd DiffAtlas_TotalSegmentator
   wget -o pretrained_TotalSegmentator_for_MMWHSMRITest https://huggingface.co/YuheLiuu/DiffAtlas_Pretrained_model/resolve/main/TotalSegmentator_for_MMWHSMRITest.pt
-  cd ../..
   ```
 
   start inference :
 
   ```
+  cd DiffAtlas
   chmod +x ./testing_scripts/test_MMWHSMRI_all_train_TotalSegmentator
   ./testing_scripts/test_MMWHSMRI_all_train_TotalSegmentator
   ```
@@ -310,6 +321,7 @@ If you found this repository useful, please cite the following.
       url={https://arxiv.org/abs/2503.06748}, 
 }
 ```
+
 
 
 
