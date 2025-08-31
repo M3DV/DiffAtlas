@@ -155,14 +155,14 @@ The training scripts are all stored in the `training_scripts` folder, and the sp
 
 All the testing scripts are stored in the `testing_scripts` folder. You can use them to test the training results.
 
-**Note:** If you want to perform inference with your own trained results, please modify the `model_num` parameter in the script to the specified weights and skip the steps below for downloading the pretrained weights.
-
 If you need to obtain the pretrained weights, please perform the following steps first :
 
 ```
 mkdir -p Model
 cd Model 
 ```
+
+**Note:** If you want to perform inference with your own trained results, please modify the `model_num` parameter in the script to the specified weights and skip the steps below for downloading the pretrained weights.
 
 - Train on all training data of MMWHS-CT, and test on the training set of MMWHS-CT
 
@@ -305,4 +305,5 @@ If you found this repository useful, please cite the following.
       url={https://arxiv.org/abs/2503.06748}, 
 }
 ```
+
 
