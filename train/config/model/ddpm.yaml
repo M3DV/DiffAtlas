@@ -1,0 +1,18 @@
+diffusion_img_size: ???
+diffusion_depth_size: ???
+diffusion_num_channels: ???
+dim_mults: [1,2,4,8]
+results_folder: ???
+load_milestone: False
+batch_size: ???
+num_workers: ???
+save_and_sample_every: ???
+
+denoising_fn: Unet3D
+train_lr: 1e-4
+timesteps: ???
+loss_type: l1 
+train_num_steps: ??? 
+gradient_accumulate_every: 2 
+ema_decay: 0.995 
+amp: False 

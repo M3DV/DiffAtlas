@@ -1,0 +1,12 @@
+CUDA_VISIBLE_DEVICES=0 python test/inference.py \
+    model_path=./Model/DiffAtlas_MMWHS-MRI_all \
+    model_num=pretrained_MMWHSMRI_all \
+    dataset=MMWHS \
+    data_type=CT \
+    mode=test \
+    diffusion_img_size=64 \
+    diffusion_depth_size=64 \
+    diffusion_num_channels=6 \
+    timesteps=300 \
+    dir_name=TS \
+    root_dir=./data/MMWHS/CT/all

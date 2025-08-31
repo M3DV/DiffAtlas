@@ -1,0 +1,11 @@
+CUDA_VISIBLE_DEVICES=0 python test/inference.py \
+    model_path=./Model/DiffAtlas_TotalSegmentator \
+    model_num=pretrained_TotalSegmentator_for_TotalSegmentatorTest \
+    dataset=TS \
+    mode=test \
+    diffusion_img_size=64 \
+    diffusion_depth_size=64 \
+    diffusion_num_channels=6 \
+    timesteps=300 \
+    dir_name=TS \
+    root_dir=./data/TotalSegmentator/test
